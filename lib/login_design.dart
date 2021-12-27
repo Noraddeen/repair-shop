@@ -85,7 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: (_isValidInput)
                         ? const Text("")
                         : const Text(
-                            "Please be sure of inputing valid email and password",
+                            "be sure of inputing valid email and password",
                             style: TextStyle(
                               color: Colors.red,
                               fontWeight: FontWeight.bold,
