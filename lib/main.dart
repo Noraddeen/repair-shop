@@ -6,6 +6,8 @@ import 'package:test_stack_listview_transform/models/Craftsman_model.dart';
 import 'package:test_stack_listview_transform/screen_layout.dart';
 import 'package:test_stack_listview_transform/screens/profile.dart';
 
+import 'login_design.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -28,10 +30,7 @@ class MyApp extends StatelessWidget {
         Locale("en", "US"),
         Locale("ar", "AE"), // OR Locale('ar', 'AE') OR Other RTL locales
       ],
-      // home: const MyHomePage(),
-      routes: {
-        '/': (context) => MyHomePage(),
-      },
+      home: LoginScreen(),
     );
   }
 }

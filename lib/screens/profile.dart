@@ -6,6 +6,8 @@ import 'package:test_stack_listview_transform/icons/right_sign_icons.dart';
 import 'package:test_stack_listview_transform/icons/snap_chat_icons.dart';
 import 'package:test_stack_listview_transform/models/Craftsman_model.dart';
 
+import '../screen_layout.dart';
+
 // ignore: must_be_immutable
 class Profile extends StatefulWidget {
   Profile(@required this.craftsman, {Key? key}) : super(key: key);
@@ -88,7 +90,11 @@ class _ProfileState extends State<Profile> {
                         child: IconButton(
                           onPressed: () {
                             Navigator.pop(context);
-                            Navigator.of(context).pushNamed('/');
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MyHomePage()),
+                            );
                           },
                           icon: Icon(
                             Icons.arrow_back,
